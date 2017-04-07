@@ -2,8 +2,13 @@
 Translate on the fly. Supports any language supported by [Google Translate](https://translate.google.com/).
 
 ## Usage
-1. Download and install [AutoHotkey](https://autohotkey.com/).
-2. Download and unzip [Linguist](https://github.com/Johj/linguist/archive/master.zip).
+1. Download and unzip [Linguist](https://github.com/Johj/linguist/archive/master.zip).
+2. Run linguist.exe
+
+OR
+
+1. Download and unzip [Linguist](https://github.com/Johj/linguist/archive/master.zip).
+2. Download and install [AutoHotkey](https://autohotkey.com/).
 3. Run linguist.ahk.
 
 ## Translate
