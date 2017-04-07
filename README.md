@@ -3,7 +3,7 @@ Translate on the fly. Supports any language supported by [Google Translate](http
 
 ## Usage
 1. Download and unzip [Linguist](https://github.com/Johj/linguist/archive/master.zip).
-2. Run linguist.exe
+2. Run linguist.exe.
 
 OR
 
