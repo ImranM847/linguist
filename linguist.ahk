@@ -4,10 +4,13 @@
 #SingleInstance, Force
 return
 
-~MButton::
-  protectClipboard("read")
+~*MButton::
+  KeyWait, MButton, T0.5
+  if % ErrorLevel
+    protectClipboard("read")
 return
 
 :*:/tr::
   protectClipboard("translate")
 return
+

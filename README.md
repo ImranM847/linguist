@@ -18,7 +18,7 @@ List of `ISO-639-1 Codes` can be found [here](https://cloud.google.com/translate
 ![](https://github.com/Johj/linguist/raw/master/example/translate.gif)
 
 ## Read
-Highlight the text to be translated and press the mouse's middle (wheel) button.
+Highlight the text to be translated and press the mouse's middle (wheel) button for 0.5 seconds.
 
 ![](https://github.com/Johj/linguist/raw/master/example/read.gif)
 

@@ -1,6 +1,6 @@
 ﻿; dependency on UriEncode
 ; https://cloud.google.com/translate/docs/languages for langOut and langIn
-GoogleTranslate(query, langOut, langIn = "auto") {
+GoogleTranslate(query, langOut = "en", langIn = "auto") {
   url := "https://translate.google.com.tw/#" . langIn . "/" . langOut . "/" . UriEncode(query, "!'()*-._~")
   ; https://support.microsoft.com/en-us/help/208427/maximum-url-length-is-2,083-characters-in-internet-explorer
   if % StrLen(url) >= 2084 {
@@ -12,8 +12,9 @@ GoogleTranslate(query, langOut, langIn = "auto") {
   ie.Navigate(url)
   while % ie.readyState != 4 || ie.document.readyState != "complete" || ie.busy
     Sleep, 50
-  translation := ie.document.getElementbyId("result_box").innerText
-  transcription := ie.document.getElementById("res-translit").innerText
+  translationOut := ie.document.getElementbyId("result_box").innerText
+  transcriptionOut := ie.document.getElementById("res-translit").innerText
+  transcriptionIn := ie.document.getElementById("src-translit").innerText
   ie.Quit
-  return [translation, transcription]
+  return [translationOut, transcriptionOut, transcriptionIn]
 }
